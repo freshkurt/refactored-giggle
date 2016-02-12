@@ -1,5 +1,5 @@
 copilot:
   build:
-    image: xaxis/copilot
+    image: copilot
     dockerfile_path: Dockerfile
   cached: true
