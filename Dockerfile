@@ -8,6 +8,6 @@ RUN apt-get update && \
     git
 FROM Python 3.5.1
 WORKDIR ./
-COPY requirements.txt ./
+COPY requirements.txt dev-requirement.txt ./
 RUN pip install -r requirements.txt
 COPY ../
