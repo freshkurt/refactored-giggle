@@ -8,6 +8,6 @@ RUN apt-get update && \
     git
 FROM python:3.5.1
 WORKDIR ./
-COPY requirements.txt ./
-RUN pip install -r requirements.txt
+COPY requirements.txt dev-requirements.txt ./
+RUN pip install -r requirements.txt -r dev-requirements.txt
 COPY ../
