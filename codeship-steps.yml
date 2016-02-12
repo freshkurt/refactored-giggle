@@ -1,0 +1,5 @@
+- name: ci
+  type: serial
+  steps:
+  - service: copilot
+    command: py.test -vv
