@@ -6,7 +6,6 @@ RUN apt-get update && \
     telnet \
     zip \
     git
-FROM python:3.5.1
 WORKDIR ./
 COPY requirements.txt dev-requirements.txt ./
 RUN pip install -r requirements.txt -r dev-requirements.txt
