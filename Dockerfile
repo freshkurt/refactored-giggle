@@ -9,4 +9,4 @@ RUN apt-get update && \
 WORKDIR ./
 COPY requirements.txt dev-requirements.txt ./
 RUN pip install -r requirements.txt -r dev-requirements.txt
-COPY ../
+COPY . ./
