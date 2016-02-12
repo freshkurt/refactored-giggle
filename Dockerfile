@@ -1,4 +1,4 @@
-FROM 
+FROM continuumio/anaconda3:latest
 RUN apt-get update && \
     apt-get install -y \
     procps \
@@ -6,9 +6,8 @@ RUN apt-get update && \
     telnet \
     zip \
     git
-EXPOSE 5000
-FROM latest
-WORKDIR /copilot
-COPY requirements.txt
+FROM Python 3.5.1
+WORKDIR ./
+COPY requirements.txt ./
 RUN pip install -r requirements.txt
 COPY ../
